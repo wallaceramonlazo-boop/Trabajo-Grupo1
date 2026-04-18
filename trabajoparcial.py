@@ -116,7 +116,6 @@ class RelacionDivisibilidad:
             ax.text(x, y, str(nodo), ha="center", va="center",
                     fontsize=11, fontweight="bold", color="white", zorder=4)
 
-        # Leyenda sin mpatches
         leyenda = [
             plt.Line2D([0],[0], marker='o', color='w', markerfacecolor="#2196F3", markersize=12, label="Minimal"),
             plt.Line2D([0],[0], marker='o', color='w', markerfacecolor="#FF9800", markersize=12, label="Intermedio"),
@@ -131,6 +130,14 @@ class RelacionDivisibilidad:
 
         plt.tight_layout()
         plt.show()
+
+
+n = int(input("Ingrese n: "))
+r = RelacionDivisibilidad(n)
+op = int(input("Subconjunto A — [1] Todo D  [2] Manual: "))
+r.seleccionar_subconjunto(op)
+r.mostrar_consola()
+r.graficar_hasse()
 
 
 # ── MAIN ──
