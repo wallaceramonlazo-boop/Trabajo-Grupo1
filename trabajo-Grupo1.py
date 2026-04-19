@@ -27,7 +27,7 @@ class DivisibilidadConcreta(Divisibilidad):
     def mostrar(self):
         self.MostrarConsola()
 
-
+@property
 def main():
     print("Relacion de divisibilidad")
     try:
@@ -41,5 +41,5 @@ def main():
         print("Ingrese un numero valido")
 
 
-main()
-       
+main
+
