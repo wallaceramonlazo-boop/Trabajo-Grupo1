@@ -42,5 +42,5 @@ def main():
         print("Ingrese un numero valido")
 
 
-main
+main()
 
