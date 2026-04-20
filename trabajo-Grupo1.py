@@ -6,6 +6,7 @@ class Divisibilidad(ABC):
     def __init__(self, n):
         self.__n = n
         self.__Divisores = self.CalcularDivisores()
+        self.__A = []
 
     def CalcularDivisores(self):
         return [i for i in range(1, self.__n + 1) if self.__n % i == 0]
