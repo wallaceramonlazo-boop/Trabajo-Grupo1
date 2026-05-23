@@ -104,10 +104,11 @@ def main():
             print("")    
             op= 0
 
-            while op!=3:
+            while op!=4:
                 print(f"1.Mostrar Divisores del numero '{Maximo}'")
                 print(f"2.Mostrar Diagrama de Hasse del numero '{Maximo}'")
-                print(f"3.Salir ")
+                print(f"3.Mostrar Relacion de divisibilidad del numero '{Maximo}'")
+                print(f"4.Salir ")
                 try: 
                     op= int(input(f"{Fore.LIGHTBLUE_EX}Elija una opcion: {Fore.WHITE}"))
                     match op:
@@ -118,6 +119,9 @@ def main():
                             Control.mostrar()
                             print("")
                         case 3:
+                            print(Control.rel_divisibilidad())
+                            print("")
+                        case 4:
                             print("Saliendo ")
                         case _:
                             print(f"{Fore.RED}Opcion no valida {Fore.WHITE}")     
